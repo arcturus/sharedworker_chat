@@ -1,5 +1,5 @@
 // Worker initialisation
-var worker = new SharedWorker('/worker.js');
+var worker = new SharedWorker('./worker.js');
 worker.port.addEventListener('message', function(evt) {
   onMessage(evt.data);
 });
