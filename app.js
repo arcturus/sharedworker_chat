@@ -32,7 +32,7 @@ function onMessage(msg) {
   var log = document.getElementById('log');
   var span = document.createElement('span');
   span.textContent = msg;
-  log.innerHTML += msg + '<br/>';
+  log.innerHTML += span.textContent + '<br/>';
 }
 
 document.getElementById('send').addEventListener('click', function() {
